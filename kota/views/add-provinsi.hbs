@@ -1,0 +1,18 @@
+{{>header}}
+{{>topnav}}
+    <div class="formContainer">
+        <form action="/add-provinsi/store" method="POST" enctype="multipart/form-data">
+            <div class="formGroup">
+                <label>Nama Provinsi</label>
+                <input type="text" id="nama" name="nama" class="inputTxt" placeholder="Type province name">
+                <label>Tanggal Peresmian</label>
+                <input type="date" id="tgl" name="tgl">
+                <label>Logo</label>
+                <input type="file" id="file" name="image">
+                <label>Pulau</label>
+                <input type="text" id="pulau" name="pulau">
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+{{>footer}}

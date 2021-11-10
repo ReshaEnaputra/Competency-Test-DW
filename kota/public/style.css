@@ -1,0 +1,94 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.title {
+    width: 40%;
+}
+
+.topNav {
+    display: flex;
+}
+
+.navbtnContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 60%;
+}
+
+.Add {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+    height: 20px;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.img {
+    width: 100px;
+}
+
+.p {
+    text-align: center;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: block;
+    width: 100px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 5px 4px 0px;
+}
+
+.detail {
+    text-decoration: none;
+    color: black;
+    width: 42px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+.cardContainer {
+    display: flex;
+}
+
+.aContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgD {
+    width: 300px;
+}
+
+.cardContainerD {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aD {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+}

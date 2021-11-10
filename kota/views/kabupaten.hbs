@@ -1,0 +1,24 @@
+{{>header}}
+{{>topnav}}
+    <div class="mainContainer">
+        <select name="select" onchange="location = this.value">
+            <option value="/kabupaten">Provinsi</option>
+            <option value="/">Kabupaten</option>
+        </select>
+        {{#each provinsi}}
+        <div class="cardContainer">
+                <div class="card">
+                    <div class="imgContainer">
+                        <img class="img" src="{{this.image}}">
+                    </div>
+                    <p class="p">{{this.nama}}</p>
+                    <p class="p">{{this.tgl}}</p>
+                    <div class="aContainer">
+                        <a href="/kabupaten/edit/{{this.id}}" class="detail">Edit</a>
+                        <a href="/kabupaten/delete/{{this.id}}" class="detail">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+{{>footer}}

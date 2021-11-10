@@ -1,0 +1,23 @@
+{{>header}}
+{{>topnav}}
+    <div class="formContainer">
+        <form action="/add-kabupaten/store" method="POST" enctype="multipart/form-data">
+            <div class="formGroup">
+                <label>Nama Kabupaten</label>
+                <input type="text" id="nama" name="nama" class="inputTxt" placeholder="Type district name">
+                <label>Tanggal Peresmian</label>
+                <input type="date" id="tgl" name="tgl">
+                <label>Logo</label>
+                <input type="file" id="file" name="image">
+                <label>Provinsi</label>
+                <select name="provinsi">
+                    <option value="">Select</option>
+                    {{#each provinsi}}
+                        <option value="{{this.id}}">{{this.nama}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+{{>footer}}
